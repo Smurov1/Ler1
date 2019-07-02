@@ -27,4 +27,4 @@ def get_text_messages(message):
     elif message.text == "кто самый крутой рэпер?":
         bot.send_message(message.chat.id, "оксимирон")
 
-bot.polling(none_stop=true, interval=0)
+bot.polling(none_stop=True, interval=0)
