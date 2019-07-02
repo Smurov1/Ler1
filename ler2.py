@@ -26,3 +26,10 @@ def get_text_messages(message):
         bot.send_message(message.chat.id, "ёбаный рот этого казино")
 
 bot.polling(none_stop=true, interval=0)
+
+import os
+import psycopg2
+
+DATABASE_URL = os.environ['DATABASE_URL']
+
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
